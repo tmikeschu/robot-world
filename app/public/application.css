@@ -11,9 +11,15 @@ header {
   color: #FEFCE8;
 }
 
-header h1 {
+header h1 a {
+  text-decoration: none;
+  color: inherit;
   font-size: 90px;
   float: left;
+}
+
+header h1 a:hover {
+  color: #C84127;
 }
 
 header nav {
@@ -43,10 +49,11 @@ nav li a {
 
 .robot-bio {
   padding: 0 30px;
+  text-align: center;
 }
 
 .robot-bio li {
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   width: 50%;
   background-color: #FEFCE8;
   border-radius: 5px;
@@ -129,6 +136,31 @@ nav li a {
 .robot-profile h2 a:hover {
   text-decoration: underline;
   color: #3d2117;
+}
+
+.btn {
+  clear: left;
+  padding: 5px;
+}
+
+.btn form {
+  display: inline-block;
+  margin: auto 5px;
+}
+
+.btn form input[type="submit"] {
+  font-family: inherit;
+  /*font-size: 18px;*/
+  background: #FEFCE8;
+  color: #3d2117;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.btn form input[type="submit"]:hover {
+  /*font-size: 18px;*/
+  background: #3d2117;
+  color: #FEFCE8;
 }
 
 .robot-profile p {

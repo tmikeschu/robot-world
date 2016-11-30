@@ -1,6 +1,14 @@
 <div class="robot-profile">
-  <h2><a href="/robots/<%= @robot.id %>/edit"><%= @robot.name %></a></h2>
-  <p class="message">Not good!</p></li>
+  <h2><%= @robot.name %></h2>
+  <div class='btn'>
+    <form action="/robots/<%= @robot.id %>/edit" method="GET">
+      <input type='submit' value='edit'/>
+    </form>       
+    <form action="/robots/<%= @robot.id %>" method="POST">
+      <input type='hidden' name='_method' value='DELETE'>
+      <input type='submit' value='delete'/>
+    </form>       
+  </div>
   <p><%= @robot.city %>, <%= @robot.state %></p>
   <p><%= @robot.department %> Department</p>
 </div>
