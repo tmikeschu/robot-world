@@ -3,12 +3,26 @@ body {
   background-color: #C84127;
 }
 
+.push {
+  height: 100px;
+}
+
+.container {
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
 header {
   background-color: #3d2117;
   height: 90px;
+  width: 100%;
   padding: 0 25px;
   border-bottom: 5px solid #67C5C2;
   color: #FEFCE8;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 header h1 a {
@@ -24,6 +38,7 @@ header h1 a:hover {
 
 header nav {
   margin-top: 4px;
+  margin-right: 40px;
   float: right;
 }
 
@@ -41,6 +56,7 @@ nav li:hover {
   background-color: #FEFCE8;
   color: #3d2117;
   text-decoration: none;
+  border-radius: 50%;
 }
 
 nav li a {
