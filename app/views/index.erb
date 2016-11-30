@@ -1,5 +1,16 @@
-<h1>My Robots</h1>
-
+<ul class="robot-bio">
 <% @robots.each do |robot| %>
-
+    <li>
+      <p><%= robot.department %></p>
+      <div class='btn'>
+        <a href="/robots/<%= robot.id %>/edit">Edit</a>
+        <form action="/robots/<%= robot.id %>" method="POST">
+          <input type='hidden' name='_method' value='DELETE'>
+          <input type='submit' value='delete'/>
+        </form>       
+      </div>
+      <h2><a href="robots/<%= robot.id %>"><%= robot.name %></a></h2>
+      <p><%= robot.city %>, <%= robot.state %></p>
+    </li>
 <% end %>
+</ul>

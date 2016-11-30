@@ -2,11 +2,21 @@
 <html>
   <head>
     <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/application.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="/application.css">
     <title>Robot World</title>
   </head>
   <body>
+    <header>
+      <h1 id="index-header">Robot World</h1>
+      <nav>
+        <ul>
+          <a href="/robots/new"><li>New Robot</li></a>
+          <a href="/robots"><li>All Robots</li></a>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
+    <footer></footer>
   </body>
 </html>

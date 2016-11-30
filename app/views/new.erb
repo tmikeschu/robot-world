@@ -1,8 +1,10 @@
-<form action="/robots" method="POST">
-  <p>Enter the robot's information</p><br/>
-  Name:<input type="text" name="robot[name]"><br/>
-  City:<input type="text" name="robot[city]"><br/>
-  State:<input type="text" name="robot[state]"><br/>
-  Department:<input type="text" name="robot[department]"><br/>
-  <input type="submit" value="ROBOTIZE"><br/>
-</form>
+<div class="new-robot">
+  <form action="/robots" method="POST">
+    <p>Tell us about this robot...</p><br/>
+    <input type="text" name="robot[name]" value="Name" onclick='this.value = "";'><br/>
+    <input type="text" name="robot[city]" value="City" onclick='this.value = "";'><br/>
+    <input type="text" name="robot[state]" value="State" onclick='this.value = "";'><br/>
+    <input type="text" name="robot[department]" value="Department" onclick='this.value = "";'><br/>
+    <input type="submit" value="ROBOTIZE"><br/>
+  </form>
+</div>

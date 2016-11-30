@@ -1,0 +1,11 @@
+<div class="new-robot">
+  <form action="/robots/<%= @robot.id %>" method="POST">
+    <p>What do you need to change?</p>
+    <input type="hidden" name="_method" value="PUT"><br/>
+    <input type="text" name="robot[name]" value="<%= @robot.name %>" onclick='this.value = "";'><br/>
+    <input type="text" name="robot[city]" value="<%= @robot.city %>" onclick='this.value = "";'><br/>
+    <input type="text" name="robot[state]" value="<%= @robot.state %>" onclick='this.value = "";'><br/>
+    <input type="text" name="robot[department]" value="<%= @robot.department %>" onclick='this.value = "";'><br/>
+    <input type="submit" value="RE-ROBOTIZE"><br/>
+  </form>
+</div>
