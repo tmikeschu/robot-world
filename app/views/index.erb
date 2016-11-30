@@ -1,18 +1,20 @@
-<ul class="robot-bio">
+<ul class="container">
 <% @robots.each do |robot| %>
-    <li>
-      <p><%= robot.department %></p>
-      <h2><a href="robots/<%= robot.id %>"><%= robot.name %></a></h2>
-      <p><%= robot.city %>, <%= robot.state %></p>
-    </li>
-    <div class='btn'>
-      <form action="/robots/<%= robot.id %>/edit" method="GET">
-        <input type='submit' value='edit'/>
-      </form>       
-      <form action="/robots/<%= robot.id %>" method="POST">
-        <input type='hidden' name='_method' value='DELETE'>
-        <input type='submit' value='delete'/>
-      </form>       
+    <div class="robot-bio">
+      <li>
+        <p><%= robot.department %></p>
+        <h2><a href="robots/<%= robot.id %>"><%= robot.name %></a></h2>
+        <p><%= robot.city %>, <%= robot.state %></p>
+      </li>
+      <div class='btn'>
+        <form action="/robots/<%= robot.id %>/edit" method="GET">
+          <input type='submit' value='edit'/>
+        </form>       
+        <form action="/robots/<%= robot.id %>" method="POST">
+          <input type='hidden' name='_method' value='DELETE'>
+          <input type='submit' value='delete'/>
+        </form>       
+      </div>
     </div>
 <% end %>
 </ul>

@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  margin: 20px;
+  margin: 15px;
   padding-bottom: 50px;
 }
 
@@ -66,6 +66,30 @@ nav li a {
 .robot-bio {
   padding: 0 30px;
   text-align: center;
+}
+
+.robot-bio:hover {
+  animation-duration: 1s;
+  animation-name: pulse-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse-in {
+  0% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: .8;
+  }
 }
 
 .robot-bio li {
@@ -130,6 +154,19 @@ nav li a {
 
 .robot-profile {
   text-align: center;
+  animation-duration: 1.5s;
+  animation-name: bounce;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .robot-profile h2 {
